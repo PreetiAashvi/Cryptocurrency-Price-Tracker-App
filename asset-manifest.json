@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Cryptocurrency-Price-Tracker-App/static/css/main.3bb3aaef.css",
+    "main.js": "/Cryptocurrency-Price-Tracker-App/static/js/main.c605d2ab.js",
+    "index.html": "/Cryptocurrency-Price-Tracker-App/index.html",
+    "main.3bb3aaef.css.map": "/Cryptocurrency-Price-Tracker-App/static/css/main.3bb3aaef.css.map",
+    "main.c605d2ab.js.map": "/Cryptocurrency-Price-Tracker-App/static/js/main.c605d2ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bb3aaef.css",
+    "static/js/main.c605d2ab.js"
+  ]
+}
