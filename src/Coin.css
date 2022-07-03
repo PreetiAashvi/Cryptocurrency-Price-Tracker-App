@@ -1,13 +1,47 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.coin-app {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(248, 223, 227) ; */
+    
+/* } */
+
 .coin-container {
     display: flex;
     justify-content: center;
     background-color: #f8f0f6; 
+    border: 1px solid rgb(69, 4, 174) ;
+    
 }
+
+/* .coin-search {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+} */
 
 .coin-heading {
     display: flex;
     justify-content: center;
+    text-decoration: underline;
+    color:rgb(69, 4, 174);
+    Padding: 10px;
 }
+
+
+
+/* .coin-input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color : rgb(22, 141, 245);
+    background-color: rgb(207, 207, 250);
+} */
 
 .coin-row {
     display: flex;
@@ -15,8 +49,8 @@
     justify-items: start;
     align-items: center;
     height: 80px; 
-    border-bottom: 1px solid #2b0488;
-    width: 900px;
+    /* border-bottom: 1px solid #2b0488; */
+    width: 80%;
 }
 
 .coin {
@@ -45,16 +79,20 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    width: 100%;
+    width: 900px;
 }
+
 
 .coin-price {
     width: 130px;
-    Padding-right:75px;
+    padding: 10px;
+     Padding-right:85px; 
+      
 }
 
 .coin-volume {
     width: 155px;
+    padding: 10px;
 }
 
 .coin-marketcap {
@@ -63,12 +101,14 @@
 
 .coin-percent {
     width: 100%;
+     padding: 10px; 
+    /* padding-left: -20px; */
 }
 
 .red {
-    color: rgb(234, 28, 28);
+    color: rgb(202, 7, 7);
 }
 
 .green {
-    color: rgb(64, 194, 64);
+    color: rgb(5, 171, 5);
 }

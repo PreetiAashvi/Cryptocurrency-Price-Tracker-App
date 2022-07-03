@@ -8,17 +8,31 @@ function App() {
   const [coins, setcoins] = useState([]);
   const [search, setSearch] = useState('');
 
-  useEffect(() => {
-    axios
-      .get(
+   useEffect(() => {
+    // const timer= setInterval(() => {
+    //   axios
+    //   .get(
+    //     'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+    //   ) 
+    //   .then(res => {
+    //     setcoins(res.data);
+    //     //console.log(res.data);
+    //   })
+    //   .catch(error => console.log(error));
+    //     return clearInterval(timer);
+    //   }, 1000);
+    // });
+
+     axios
+       .get(
         'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
-      ) 
-      .then(res => {
-        setcoins(res.data);
-        //console.log(res.data);
-      })
-      .catch(error => console.log(error));
-  }, []);
+       ) 
+       .then(res => {
+         setcoins(res.data);
+         //console.log(res.data);
+       })
+       .catch(error => console.log(error));
+   }, []);
 
   const handleChange = e => {
     setSearch(e.target.value)
@@ -30,14 +44,14 @@ function App() {
   return (
     <div className='coin-app'>
         <div>
-        <h1 className='coin-heading'>CRYPTOCURRENCY PRICE TRACKER </h1>
+        <h1 className='coin-heading'>COIN PRICE TRACKER </h1>
         </div>
       <div className='coin-search'>
         <h1 className='coin-text'>Search a Currency</h1>
         <form>
           <input 
            type='text'
-           placeholder='search' 
+           placeholder='Search' 
            className='coin-input'
            onChange={handleChange}
           />
